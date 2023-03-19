@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/2.index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title _msttexthash="9502792" _msthash="0">문서</title>
+    <style>
+      /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+	    font-family: "LeeSeoyun";
+ 	    margin: 0;
+	    display: flex;
+	    justify-content: center;
+	    background-image: url("KakaoTalk_20230319_172802830.jpg");
+      }
+
+      .container {
+        width: 390px;
+        background-color: rgb(255, 255, 202);
+        height: 100%;
+      }
+
+      .photos {
+        margin-top: 35px;
+      }
+
+      .photo-frame {
+        background-color: white;
+        margin: 10px 20px;
+        height: 200px;
+
+        background-size: cover;
+        position: relative;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .f-title {
+        color:rgb(243, 162, 63);
+        font-size: 25px;
+        font-weight: 900;
+      }
+
+      .f-date {
+        color:rgb(243, 162, 63);
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      #image1 {
+        background-image: url('./첫번째.jpg');
+      }
+
+      #image2 {
+        background-image: url('./두번째.jpg');
+      }
+
+      #image3 {
+        background-image: url('./세번째.jpg');
+      }
+
+      #image4 {
+        background-image: url('./네번째.jpg');
+      }
+
+      .photo_description {
+        color:rgba(75, 153, 221, 0.541);
+        background-color: rgb(229, 237, 243);
+        width: fit-content;
+        padding: 0 8px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+
+        transform: translate(-50%);
+        left: 50%;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_description" _msttexthash="21984209" _msthash="1">
+                프로방스
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc1" class="photo_description" _msttexthash="25294217" _msthash="2">
+                쪼코♡우유
+                </span>
+            </div> <div id="image3" class="photo-frame">
+                <span id="desc1" class="photo_description" _msttexthash="4618432" _msthash="3">
+                와
+                </span>
+            </div> <div id="image4" class="photo-frame">
+                <span id="desc1" class="photo_description" _msttexthash="22799361" _msthash="4">
+                우리 가족♡
+                </span>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="f-title" _msttexthash="45060262" _msthash="5"> 행복한 가족의 날 </p>
+            <p class="f-date" _msttexthash="3275142" _msthash="6">♥ 2023.03.18 ♥</p><p>
+        </p></div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
